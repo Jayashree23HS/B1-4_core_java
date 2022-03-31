@@ -9,5 +9,5 @@ public class ex1 {
 	}
 
 }
-30;00
+
 

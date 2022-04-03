@@ -14,7 +14,7 @@ public class dowhile {
 			i++;
 		}
 		while(i<=10);
-		
+		sc.close();
 	}
 
 }

@@ -1,9 +1,11 @@
 package Abstract;
 
 public class example2 {
-	final int a=100;
-	void display() {
-		a=50
+	 int a=100;
+	void display()
+	{
+		a=50;
+				System.out.println(a);
 	}
 
 	public static void main(String[] args) {

@@ -4,13 +4,13 @@ public class Example2 {
 	int a,b;
 	void display(int a,int b)
 	{
-		a=a;
-		b=b;
+		this.a=a;
+		this.b=b;
 	}
 	void print()
 	{
 		System.out.println("value of a: " +a);
-		System.out.println("value of a: " +a);
+		System.out.println("value of b: " +b);
 
 	}
 

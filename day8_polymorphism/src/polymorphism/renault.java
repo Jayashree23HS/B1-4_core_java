@@ -17,7 +17,6 @@ public class renault {
 		renault r=new renault();
 		renault r1=new renault("yellow",50);
 		System.out.println(r1.color+" "+r1.speed);
-		// TODO Auto-generated method stub
 
 	}
 

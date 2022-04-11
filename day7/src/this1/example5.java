@@ -26,10 +26,7 @@ public class example5 {
 	public static void main(String[] args)
 
 	{
-
-	example5 object = new example5();
-
-	
+		example5 o = new example5();
 		
 
 	}

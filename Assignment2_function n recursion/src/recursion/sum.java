@@ -23,7 +23,7 @@ public class sum {
         }
         else
         {
-             return sum+(n/10);
+             return sum+add(n/10);
              
         }
         

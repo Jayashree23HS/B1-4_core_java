@@ -2,21 +2,22 @@ package framework;
 
 public abstract class NormalAcc extends ShopAcc
 {
-	private static float deliveryCharges;
-	
-	
-	public NormalAcc(int accNo,String accNm,float deliveryCharges, float charges)
-	{
-		super(accNo,accNm,charges);
-		NormalAcc.deliveryCharges=deliveryCharges;
+	private final float deliveryCharges;
+
+	public NormalAcc(int accNo, String accNm, float charges,float deliveryCharges) {
+		super(accNo, accNm, charges);
+		this.deliveryCharges=deliveryCharges;
 	}
-	public void bookProduct(float deliveryCharge)
-	{
-		
+	public void bookProduct(float charges) {
+	
+		System.out.println("Account no: "+this.getAccNo()+ "\n"+"   Account Name:  "+this.getAccNm()+ " \n "+"charge: "+  (charges+deliveryCharges));
 	}
 	@Override
 	public String toString() {
-		return String.format("NormalAcc [deliveryCharge=%s]", deliveryCharges);
+		return String.format("NormalAcc [deliveryCharges=%s, toString()=%s]",
+				deliveryCharges, super.toString());
 	}
+	
+
 
 }

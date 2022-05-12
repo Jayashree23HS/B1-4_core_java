@@ -2,21 +2,25 @@ package framework;
 
 public abstract class CurrentAcc extends BankAcc
 {
-	private static float creditLimit;
+	private final float MINBAL;
 	
-	public CurrentAcc(int accNo, String accNm,float creditLimit, float accBal)
+	public CurrentAcc(int accNo, String accNm,float accBal, float MINBAL)
 	{
 		super(accNo,accNm,accBal);
-		CurrentAcc.creditLimit=creditLimit;
+		this.MINBAL=MINBAL;
 	}
-	public void withdraw(float creditLimit)
-	{
-		
+
+	public void withdraw(float accBal) {
+		System.out.println("Account no: "+this.getAccNo()+"\n "+" Account name: "+this.getAccNm()+ "\n  "+"Account Balance: "+(accBal+MINBAL));
 	}
+
+
 	@Override
 	public String toString() {
-		return String.format("CurrentAcc []");
+		return String.format("CurrentAcc [MINBAL=%s, toString()=%s]", MINBAL,super.toString());
 	}
+
+	
 	
 
 }
